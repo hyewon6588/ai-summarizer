@@ -1,7 +1,9 @@
-require("dotenv").config();
-const express = require("express");
-const cors = require("cors");
-const { summarizeText } = require("./summarizer");
+import express from "express";
+import cors from "cors";
+import dotenv from "dotenv";
+import { summarizeText, summarizeFromUrl } from "./summarizer.js";
+
+dotenv.config();
 
 const app = express();
 const PORT = 3001;
@@ -24,6 +26,21 @@ app.post("/summarize", async (req, res) => {
   } catch (err) {
     console.error("Summary error:", err);
     res.status(500).json({ error: "Failed to summarize article." });
+  }
+});
+
+app.post("/summarize-link", async (req, res) => {
+  const { url } = req.body;
+
+  if (!url) {
+    return res.status(400).json({ error: "Missing 'url' in request body." });
+  }
+
+  try {
+    const summary = await summarizeFromUrl(url);
+    res.json({ summary });
+  } catch (err) {
+    res.status(500).json({ error: "Summarization failed." });
   }
 });
 
