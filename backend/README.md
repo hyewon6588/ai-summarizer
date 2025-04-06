@@ -8,7 +8,7 @@ This backend service summarizes article content using the Gemini API.
    npm install
 
 2. Add your Gemini API key to .env:
-   GEMINI_API_KEY=your_api_key_here
+   GOOGLE_API_KEY=your_api_key_here
 
 3. Start the server:
    node server.js
