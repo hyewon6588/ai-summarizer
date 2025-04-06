@@ -51,7 +51,7 @@ export async function summarizeFromUrl(url) {
     const formattedPrompt = await prompt.formatMessages({ article: content });
 
     const summary = await model.invoke(formattedPrompt);
-    return summary;
+    return summary.content;
   } catch (error) {
     console.error("Error summarizing from URL:", error);
     throw new Error("Failed to summarize from URL.");
