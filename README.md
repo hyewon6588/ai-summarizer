@@ -77,6 +77,12 @@ This logic allows for consistent summarization of both direct input and online a
 ---
 
 ### ✅ b. Articles Selected
+####  1. Impact of Emerging Technologies to the Environment
+
+- **Article:** [Explained: Generative AI’s environmental impact (MIT News, 2025)](https://news.mit.edu/2025/explained-generative-ai-environmental-impact-0117)
+
+#### 2. Sustainable Solutions Provided by Top Software Makers
+- **Article:** [Sustainability management software providers to consider (TechTarget, 2025)](https://www.techtarget.com/sustainability/feature/Sustainability-management-software-providers-to-consider)
 
 ---
 
@@ -87,3 +93,15 @@ This logic allows for consistent summarization of both direct input and online a
   - `POST /summarize-link` with article URL
 - ✅ Verified that response includes academic summary in `summary.content`
 - ✅ Confirmed frontend correctly displays AI-generated summaries in real time
+- 
+---
+
+### ✅ d. Group Memeber
+
+   1 -   Yein An    
+   2 -   Hyewon Ham    
+   3 -   Hyerim Jeong    
+   4 –   Eunji Kwon    
+   5 –   Jeremy Liao 
+
+---
