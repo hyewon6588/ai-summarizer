@@ -88,11 +88,11 @@ This logic allows for consistent summarization of both direct input and online a
 
 ### ✅ c. How the solution was tested
 
-- ✅ Tested both endpoints using **Postman**:
+-  Tested both endpoints using **Postman**:
   - `POST /summarize` with raw article text
   - `POST /summarize-link` with article URL
-- ✅ Verified that response includes academic summary in `summary.content`
-- ✅ Confirmed frontend correctly displays AI-generated summaries in real time
+-  Verified that response includes academic summary in `summary.content`
+-  Confirmed frontend correctly displays AI-generated summaries in real time
   
 ---
 
